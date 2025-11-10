@@ -1,0 +1,165 @@
+{
+  "domains": {
+    "People": {
+      "weight": 42,
+      "description": "Leadership, team management, conflict resolution",
+      "topics": [
+        {
+          "id": "P1",
+          "name": "Building High-Performing Teams",
+          "subtopics": [
+            "Team formation and development",
+            "Motivating team members",
+            "Virtual team management",
+            "Empowering team members"
+          ]
+        },
+        {
+          "id": "P2",
+          "name": "Leadership Skills",
+          "subtopics": [
+            "Servant leadership",
+            "Emotional intelligence",
+            "Influencing stakeholders",
+            "Communication styles"
+          ]
+        },
+        {
+          "id": "P3",
+          "name": "Conflict Management",
+          "subtopics": [
+            "Conflict resolution techniques",
+            "Negotiation strategies",
+            "Managing difficult conversations",
+            "Team dynamics"
+          ]
+        },
+        {
+          "id": "P4",
+          "name": "Stakeholder Engagement",
+          "subtopics": [
+            "Identifying stakeholders",
+            "Managing expectations",
+            "Communication planning",
+            "Building relationships"
+          ]
+        }
+      ]
+    },
+    "Process": {
+      "weight": 50,
+      "description": "Technical aspects, methodologies, execution",
+      "topics": [
+        {
+          "id": "PR1",
+          "name": "Project Integration",
+          "subtopics": [
+            "Develop project charter",
+            "Develop project management plan",
+            "Direct and manage project work",
+            "Manage project knowledge",
+            "Monitor and control project work",
+            "Perform integrated change control",
+            "Close project or phase"
+          ]
+        },
+        {
+          "id": "PR2",
+          "name": "Scope Management",
+          "subtopics": [
+            "Plan scope management",
+            "Collect requirements",
+            "Define scope",
+            "Create WBS",
+            "Validate scope",
+            "Control scope"
+          ]
+        },
+        {
+          "id": "PR3",
+          "name": "Schedule Management",
+          "subtopics": [
+            "Plan schedule management",
+            "Define activities",
+            "Sequence activities",
+            "Estimate activity durations",
+            "Develop schedule",
+            "Control schedule"
+          ]
+        },
+        {
+          "id": "PR4",
+          "name": "Agile & Hybrid Methodologies",
+          "subtopics": [
+            "Scrum framework",
+            "Kanban principles",
+            "Agile ceremonies",
+            "User stories and backlog",
+            "Iterative development",
+            "Hybrid approach selection"
+          ]
+        }
+      ]
+    },
+    "Business Environment": {
+      "weight": 8,
+      "description": "Strategic alignment, compliance, outcomes",
+      "topics": [
+        {
+          "id": "BE1",
+          "name": "Business Value",
+          "subtopics": [
+            "Benefits realization",
+            "Return on investment",
+            "Business case development",
+            "Value delivery"
+          ]
+        },
+        {
+          "id": "BE2",
+          "name": "Compliance & Governance",
+          "subtopics": [
+            "Regulatory requirements",
+            "Organizational governance",
+            "Ethical considerations",
+            "Professional responsibility"
+          ]
+        }
+      ]
+    }
+  },
+  "question_types": [
+    "Multiple Choice (single answer)",
+    "Multiple Response (select multiple)",
+    "Drag and Drop (sequencing)",
+    "Hotspot (click on diagram)",
+    "Fill in the Blank"
+  ],
+  "learning_strategies": {
+    "spaced_repetition": {
+      "name": "Spaced Repetition",
+      "description": "Review material at increasing intervals (1 day, 3 days, 7 days, 14 days)",
+      "research_basis": "Increases long-term retention by 200-300% compared to massed practice"
+    },
+    "active_recall": {
+      "name": "Active Recall",
+      "description": "Test yourself frequently without looking at notes",
+      "research_basis": "Testing enhances retention more than re-reading by activating retrieval pathways"
+    },
+    "interleaving": {
+      "name": "Interleaving",
+      "description": "Mix different topics and question types during practice",
+      "research_basis": "Improves discrimination between concepts and problem-solving by 50%"
+    },
+    "elaborative_interrogation": {
+      "name": "Elaborative Interrogation",
+      "description": "Ask 'why' and 'how' questions to connect concepts",
+      "research_basis": "Connects new information to prior knowledge, strengthening memory"
+    },
+    "immediate_feedback": {
+      "name": "Immediate Feedback",
+      "description": "Receive instant explanations after each answer",
+      "research_basis": "Corrects misconceptions immediately, preventing reinforcement of errors"
+    }
+  }
+}
