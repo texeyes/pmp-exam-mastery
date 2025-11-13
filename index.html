@@ -1953,6 +1953,7 @@ const questionBank = [
             questionStartTime: null,
             selectedAnswer: null,
             answered: false
+                    sessionResults: [],
         };
 
         // Initialize Application
@@ -2161,6 +2162,7 @@ const questionBank = [
             currentSession.questions = availableQuestions.slice(0, Math.min(numQuestions, availableQuestions.length));
             currentSession.currentIndex = 0;
             currentSession.startTime = Date.now();
+                    currentSession.sessionResults = [];
             
             document.getElementById('practiceSession').style.display = 'block';
             displayQuestion();
@@ -2287,6 +2289,9 @@ const questionBank = [
                 elaboration: elaboration,
                 nextReviewDate: nextReviewDate
             });
+            
+        // Track in session results
+        currentSession.sessionResults.push({ correct: isCorrect });
 
             saveUserData();
             updateDashboard();
@@ -2313,9 +2318,8 @@ const questionBank = [
         }
 
         function calculateSessionStats() {
-            const sessionAttempts = userData.attempts.slice(-currentSession.questions.length);
-            const correct = sessionAttempts.filter(a => a.correct).length;
-            const total = sessionAttempts.length;
+            const correct = currentSession.sessionResults.filter(r => r.correct).length;
+        const total = currentSession.sessionResults.length;
             const accuracy = total > 0 ? Math.round((correct / total) * 100) : 0;
             return { correct, total, accuracy };
         }
